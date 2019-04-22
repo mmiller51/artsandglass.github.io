@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mmiller_projectA_part3</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<div class="home-header"></div>
+
+	
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+	
+	<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	<a href="#" class="w3-bar-item w3-button w3-hover-pale-green"><img src="Images/cropped-cropped-Arts-Glass-Logo.png" alt="" class="logo"></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-pale-green">Home</a>
+    <a href="main_studio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-green">Main Studio</a>
+    <a href="yellow_party_room.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-green">Yellow Party Room</a>
+    <a href="blue_party_room.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-green">Blue Party Room</a>
+    <a href="kiln_room.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-green">Kiln Room</a>
+	  <div class="search-container">
+		  <form action="/action_page.php">
+			  <input type="text" placeholder="Search.." name="search">
+			  <button type="submit"><i class="fa fa-search"></i></button>
+		  </form>
+	  </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+	<a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="main_studio.html" class="w3-bar-item w3-button w3-padding-large">Main Studio</a>
+    <a href="yellow_party_room.html" class="w3-bar-item w3-button w3-padding-large">Yellow Party Room</a>
+    <a href="blue_party_room.html" class="w3-bar-item w3-button w3-padding-large">Blue Party Room</a>
+    <a href="kiln_room.html" class="w3-bar-item w3-button w3-padding-large">Kiln Room</a>
+  </div>
+</div>
+	
+	<br>
+	<br>
+	<div class="container">
+		<h1>Welcome to Arts &amp; Glass</h1>
+		
+		
+	<article class="article" id="article1">We are a fully walk-in art studio where you can create your own masterpiece of paint-your-own pottery or glass fusion, no matter your artistic skill.<br>Once you've finished creating your piece we take care of the rest and your piece is ready for pickup in 7-10 days depending on our kiln schedule.<br>Besides for a walk-in basis, we also hold classes for kids and adults, summer camps as well as spaces for birthday parties. We also have gift cards for purchase in-store and online. If you have any questions, do not hesitate to stop in or call us. You can reach us at our contact page: the <a href="kiln_room.html">Kiln Room</a>. <br><br>For more information and bookings visit our <a href="http://www.iloveartsandglass.com" target="_blank">Full Site</a></article>
+		
+		<img src="Images/iCloud Photos from Megan Miller/IMG_3192.JPEG" width="2048" height="1536" alt="" class="responsive" id="image1"/>
+		
+	
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+	  <a href="https://www.facebook.com/iloveartsandglass/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	  <a href="https://www.instagram.com/artsnglass/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	  <a href="https://www.pinterest.com/ArtsAndGlass/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://www.etsy.com/shop/CotterpinCrafts" target="_blank"><i class="fa fa-etsy w3-hover-opacity"></i></a>
+ </div>
+		</footer>
+	</div>
+	
+	
+<script>
+	
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+	
+</script>
+
+	
+</body>
+</html>
